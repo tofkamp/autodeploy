@@ -1,4 +1,4 @@
-apt-get -y update
+apt-get update
 apt-get -y upgrade
 apt-get -y install git tomcat8 default-jdk maven mariadb-server
 
@@ -60,15 +60,17 @@ sed -e "s/<Connector/<Connector URIEncoding=\"UTF-8\"/" </etc/tomcat8/server.xml
 ln -s /var/log/tomcat8 /usr/share/tomcat8/logs
 
 /etc/init.d/tomcat8 restart
+# then wait for tomcat to start
 cd /tmp
 wget --verbose http://localhost:8080/vitrolib/
 
 # only for test servers
-chmod 777 /var/log/tomcat8
-apt-get -y install mc
-
+#chmod 777 /var/log/tomcat8
+#apt-get -y install mc
 
 #echo login on http://localhost:8080/vitrolib/
+echo
+echo
 echo login on http://`hostname`:8080/vitrolib/
 echo with username vitrolib_root@mydomain.edu
 echo and password rootPassword
