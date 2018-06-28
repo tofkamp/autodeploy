@@ -71,6 +71,10 @@ wget --verbose http://localhost:8080/vitrolib/
 #echo login on http://localhost:8080/vitrolib/
 echo
 echo
+echo Source is installed in /usr/local/src
+echo Home directory is /usr/local/vitrolib/home
+echo Log directory is /var/log/tomcat8
+echo
 echo login on http://`hostname`:8080/vitrolib/
 echo with username vitrolib_root@mydomain.edu
 echo and password rootPassword
