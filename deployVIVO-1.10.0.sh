@@ -59,11 +59,6 @@ sed -e "s/<Connector/<Connector URIEncoding=\"UTF-8\"/" </etc/tomcat8/server.xml
 
 /etc/init.d/tomcat8 restart
 cd /tmp
-## add latest freemarker (optional)
-#wget http://mirrors.supportex.net/apache/freemarker/engine/2.3.28/binaries/apache-freemarker-2.3.28-bin.tar.gz
-#tar xf apache-freemarker-2.3.28-bin.tar.gz
-#mv apache-freemarker-2.3.28-bin/freemarker.jar /var/lib/tomcat8/webapps/vivo/WEB-INF/lib/freemarker-2.3.28.jar
-#rm /var/lib/tomcat8/webapps/vivo/WEB-INF/lib/freemarker-2.3.23.jar
 
 # the script is too fast, so wait for tomcat to start
 wget --verbose http://localhost:8080/vivo/
