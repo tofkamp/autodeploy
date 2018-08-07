@@ -7,7 +7,7 @@ cd /usr/local/src
 mkdir vivo-1.10.0
 cd vivo-1.10.0
 wget https://github.com/vivo-project/VIVO/releases/download/vivo-1.10.0/VIVO-1.10.0.tar.gz
-tar xf vivo-1.10.0.tar.gz
+tar xf VIVO-1.10.0.tar.gz
 mkdir /usr/local/vivo
 mkdir /usr/local/vivo/home
 
