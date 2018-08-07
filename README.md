@@ -15,3 +15,9 @@ wget https://github.com/tofkamp/autodeploy/raw/master/deployVIVO-1.10.0.sh
 chmod +x deployVIVO-1.10.0.sh
 sudo ./deployVIVO-1.10.0.sh
 ```
+For adding EDM ontologies to vitrolib:
+```
+wget https://raw.githubusercontent.com/tofkamp/autodeploy/master/getEDMontology.sh
+chmod +x getEDMontology.sh
+sudo ./getEDMontology.sh
+````
